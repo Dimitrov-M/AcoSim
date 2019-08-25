@@ -15,7 +15,7 @@ class GetAuthToken(View):
         		'client_id': 'SnH41L3v1OqdeDZGIIZAf7oEz0WXqVCz',
         		'client_secret': 'AjAqZKwaPLVD8C9e',
         		'grant_type': 'client_credentials',
-        		'scope': 'data:read',
+        		'scope': 'bucket:create bucket:read data:write',
         	}
         )
         return HttpResponse(req.text)
